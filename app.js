@@ -18,24 +18,32 @@ const challenge2 = (num) => {
 }
 
 const challenge3 = (num1, num2) => {
-    if(typeof num1 === 'string' || typeof num2 === 'string'){
+    if(typeof num1 === 'string' || typeof num2 === 'string' || !num1 || !num2){
         return 'make sure you enter 2 numbers'
     }
+
     let res = num1 + num2
     if(res % 2 === 0){
         return res
-    } else {
+    }  else {
         return num1 * num2
     }
 }
 
 const challenge4 = () => {
     let arr = []
-    for(let i = 0; )
+    for(let i = 0; i < 5; i++){
+        arr.push(Math.random() * 50)
+    }
+    return arr
 }
 
 const challenge5 = () => {
-    // add code here
+    let arr = []
+    for(let i = 9; i >= 0; i--){
+        arr.push(i)
+    }
+    return arr
 }
 
 module.exports = {

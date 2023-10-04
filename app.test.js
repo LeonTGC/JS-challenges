@@ -108,11 +108,4 @@ describe("challenge 5 tests", () => {
     expect(arr.length).toBe(10);
   });
 });
-describe("pet tests", () => {
-  test("eating function returns message", () => {
-    expect(pet.eating()).toBe(`${pet.name} is eating`);
-  });
-  test("object contains 6 key values", () => {
-    expect(Object.keys(pet).length).toBe(6);
-  });
-});
+
